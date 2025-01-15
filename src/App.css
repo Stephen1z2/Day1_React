@@ -1,23 +1,24 @@
 h1 {
-  color: skyblue;
+  
   text-align: center;
   background-color: black;
+ 
 }
 
-html {
-  background-color: black;
+body {
+  background-color: grey;
 }
 
 h2 {
-  color: skyblue;
+  
   text-align: center;
-  background-color: black;
+  
 }
 
 p {
-  color: skyblue;
+  
   text-align: center;
-  background-color: black;
+  
 
 }
 
