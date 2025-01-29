@@ -1,14 +1,21 @@
 export const logs = [
-  {
-    stardate: "2023.10.01",
-    text: "It's been a long stretch in deep space. The crew has adapted to the challenges of isolation, but the constant uncertainty of unexplored regions takes its toll. We’ve encountered yet another uncharted nebula, whose electromagnetic interference is wreaking havoc on our sensors. As usual, Lieutenant Hara is determined to find a way to use it to our advantage, citing that its unique properties might offer new insights into dark matter."
-  },
-  {
-    stardate: "2023.10.02",
-    text: "We’ve also had a run-in with a peculiar asteroid field that defies our expectations—seemingly alive, with each fragment of rock moving in ways that no natural formation should. Lieutenant Commander Sato has theorized that we may be dealing with a long-lost ancient artificial structure, and I’ve ordered an away team to investigate. My gut says there’s more to this than meets the eye."
-  },
-  {
-    stardate: "2023.10.03",
-    text: "Morale on board is high, despite the hardships. I was especially moved by Lieutenant Garcia’s personal log entry today. She reminded the crew of our shared purpose and the hope we bring to the unknown. It’s this very spirit that continues to fuel our journey into the stars. Still, even as we approach the unknown, the weight of responsibility never lessens. It’s a constant balancing act between exploration and caution, between wonder and duty."
-  }
-];
+    {
+        stardate: 'Stardate 48932.1',
+        logtext: 'The crew is currently surveying the Alpha Draconis system. Strange electromagnetic interference has been detected, originating from an unknown source. We are setting up a sensor array to analyze the anomaly. Captain Reynolds suspects it could be the signature of an advanced alien communication.'
+        
+    },
+    {
+        stardate: 'Stardate 49744.6',
+        logtext: 'A routine resupply mission to the station in the Sarrin Nebula has been delayed due to a massive ion storm. All navigational systems are temporarily offline, and we have been forced into a holding pattern. The storms magnetic fields are unlike anything we have encountered. Engineering is working to stabilize the shields.'
+     },
+     {
+        stardate: "Stardate 51002.7",
+        logtext: "The crew is recovering from a series of simulated battle drills. The exercises were rigorous, pushing both our tactical teams and our new systems to their limits. Lieutenant TZara's fleet maneuvers showed considerable promise, though some adjustments are needed to improve communication between our ships.",
+     },
+     {
+        stardate: 'Stardate 51530.4',
+        logtext: 'We’ve been contacted by the Zamir, a peaceful race from the Epsilon Quadrant, seeking assistance with their energy crisis. They’ve lost contact with their power generators, and without help, they face planetary-wide blackouts. Our engineers are preparing to travel to their homeworld to assist with the restoration.',
+
+     }
+    
+]

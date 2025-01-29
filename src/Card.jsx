@@ -1,16 +1,17 @@
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/Card';
 
-function Starlog({ stardate, logText }) {
+export function Starlog({ stardate, logtext}) {
     return (
       <>
-        <h3 style={{ textAlign: 'center' }}>Stardate: {stardate}</h3>
-        <p>{logText}</p>
+        <h3 style={{ textAlign: 'center', color: 'Lime' }}>{stardate}</h3>
+        <p>{logtext}</p>
       </>
     )
   }
 
-export function CardLog({ stardate, logText }) {
+export function CardLog({ stardate, logtext }) {
     return (
       <>
         <Card sx={{
@@ -21,7 +22,7 @@ export function CardLog({ stardate, logText }) {
             backgroundColor: 'purple',
             }}>
           <CardContent sx={{ backgroundColor: 'black', color: 'Lime', margin: 'auto', padding: 2 }}>
-            <Starlog stardate={stardate} logText={logText}></Starlog>
+            <Starlog stardate={stardate} logtext={logtext}></Starlog>
           </CardContent>
         </Card>
       </>
