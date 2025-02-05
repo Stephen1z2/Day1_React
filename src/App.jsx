@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch('http://18.117.78.76:3000/logs')
+    fetch('http://3.128.232.75:3000/logs')
     .then(response => response.json())
     .then(data => setLogs(data))
     .catch(error => console.error('Error fetching data:', error));
