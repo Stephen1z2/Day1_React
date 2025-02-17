@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import { CardLog } from './Card.jsx'
 import StarrySky from './Stars.jsx'
+import ShootingStars from './ShootingStar.jsx'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch('http://3.128.232.75:3000/logs')
+    fetch('http://18.116.47.81:3000/logs')
     .then(response => response.json())
     .then(data => setLogs(data))
     .catch(error => console.error('Error fetching data:', error));
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+      <ShootingStars></ShootingStars>
       <StarrySky></StarrySky>
       <h1>Starlog – Captain's Personal Log</h1>
       <h2>USS Endeavour, Sector 001</h2>
