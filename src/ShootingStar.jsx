@@ -12,8 +12,8 @@ const ShootingStars = () => {
                 top: Math.random() * 100 + 'vh',
                 left: Math.random() * 100 + 'vw',
                 speed: Math.random() * 1.5 + 1, // Varying speed
-                color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`, // Completely random color
                 width: Math.random() * 200 + 150, // Varying width between 150px and 350px
+                color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`, // Random color
             };
 
             setStars((prevStars) => [...prevStars, newStar]);
@@ -39,7 +39,7 @@ const ShootingStars = () => {
                         top: star.top,
                         left: star.left,
                         animation: `shootingStar ${star.speed}s linear forwards, fadeOut ${star.speed}s linear forwards`,
-                        background: `linear-gradient(to left, rgba(255, 255, 255, 0) 0%, ${star.color} 50%, ${star.color} 100%)`,
+                        '--star-color': star.color, // Set the CSS variable for the color
                     }}
                 />
             ))}

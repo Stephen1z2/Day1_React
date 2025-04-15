@@ -12,20 +12,21 @@
     }
 }
 
+@keyframes pulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.8));
+    }
+    50% {
+        filter: drop-shadow(0 0 16px rgba(255, 255, 255, 1)) drop-shadow(0 0 32px rgba(255, 255, 255, 0.9));
+    }
+}
+
 .shooting-star {
     border-radius: 50% 0 50% 0%;
     pointer-events: none;
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
-    opacity: 0.8;
-    animation: shootingStar 2s linear forwards, fadeOut 2s linear forwards;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--star-color, rgba(255, 255, 255, 0.5)) 50%, var(--star-color, rgba(255, 255, 255, 1)) 100%);
+    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 1)) drop-shadow(0 0 32px rgba(255, 255, 255, 1)); /* Increase brightness */
+    opacity: 1; /* Ensure full opacity */
+    animation: shootingStar 2s linear forwards, pulse 1s infinite; /* Remove fadeOut animation */
 }
 
