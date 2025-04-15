@@ -9,12 +9,7 @@ function App() {
   const [logs, setLogs] = useState([]);
   const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch('http://18.116.47.81:3000/logs')
-    .then(response => response.json())
-    .then(data => setLogs(data))
-    .catch(error => console.error('Error fetching data:', error));
-  }, []);
+ 
 
   return (
     <>
