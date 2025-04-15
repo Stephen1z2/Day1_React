@@ -24,9 +24,9 @@
 .shooting-star {
     border-radius: 50% 0 50% 0%;
     pointer-events: none;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--star-color, rgba(255, 255, 255, 0.5)) 50%, var(--star-color, rgba(255, 255, 255, 1)) 100%);
-    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 1)) drop-shadow(0 0 32px rgba(255, 255, 255, 1)); /* Increase brightness */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--star-color, rgba(255, 255, 255, 0.8)) 50%, var(--star-color, rgba(255, 255, 255, 1)) 100%);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)) drop-shadow(0 0 40px rgba(255, 255, 255, 1)); /* Further increase brightness */
     opacity: 1; /* Ensure full opacity */
-    animation: shootingStar 2s linear forwards, pulse 1s infinite; /* Remove fadeOut animation */
+    animation: shootingStar 2s linear forwards, pulse 1s infinite; /* Keep pulse effect */
 }
 

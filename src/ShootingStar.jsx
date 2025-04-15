@@ -10,9 +10,9 @@ const ShootingStars = () => {
                 id: Date.now(),
                 size: Math.random() * 3 + 1,
                 top: Math.random() * 100 + 'vh',
-                left: Math.random() * 100 + 'vw',
-                speed: Math.random() * 1.5 + 1, // Varying speed
-                width: Math.random() * 200 + 150, // Varying width between 150px and 350px
+                left: Math.random() * 80 + 20 + 'vw', // Ensure stars spawn between 20vw and 100vw
+                speed: Math.random() * 1 + .3, // Varying speed
+                width: Math.random() * 200 + 100, // Varying width between 150px and 350px
                 color: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`, // Random color
             };
 
@@ -21,7 +21,7 @@ const ShootingStars = () => {
             setTimeout(() => {
                 setStars((prevStars) => prevStars.filter(star => star.id !== newStar.id));
             }, 2000);
-        }, 1000);
+        }, 1500);
 
         return () => clearInterval(intervalId);
     }, []);
