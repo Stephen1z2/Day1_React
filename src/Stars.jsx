@@ -20,7 +20,7 @@ const StarrySky = () => {
       setTimeout(() => {
         setStars((prevStars) => prevStars.filter(star => star.id !== newStar.id));
       }, 1500); // Delay for opacity transition and removal
-    }, 25); // Increase the frequency of star creation
+    }, 1); // Increase the frequency of star creation
 
     return () => clearInterval(intervalId); // Clean up the interval on component unmount
   }, []);
